@@ -71,7 +71,7 @@ public class NotificationPanel extends Service {
         Notification notification = new NotificationCompat.Builder(this, CHANNEL_ID)
                 .addAction(iconPlayPause, titlePlayPause, pendingToggleIntent)
                 .setStyle(new androidx.media.app.NotificationCompat.MediaStyle()
-                        .setShowActionsInCompactView(0, 1,2)
+                        .setShowActionsInCompactView(0)
                         .setShowCancelButton(true)
                         .setMediaSession(mediaSession.getSessionToken()))
                 .setSmallIcon(R.drawable.ic_stat_music_note)
